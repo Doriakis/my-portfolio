@@ -12,6 +12,10 @@
     section { padding: 2rem 1rem; }
     .skills ul { list-style: none; padding: 0; }
     .skills li { background: #e2e2e2; margin: 0.5rem 0; padding: 0.5rem; }
+    .projects { background: #f9f9f9; }
+    .project { border-left: 4px solid #333; margin: 1.5rem 0; padding: 1rem; background: #fff; }
+    .project h3 { margin-top: 0; color: #333; }
+    .project ul { margin: 0.5rem 0; padding-left: 1.5rem; }
   </style>
 </head>
 <body>
@@ -23,6 +27,7 @@
       <a href="#hero">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
     </nav>
   </header>
 
@@ -51,6 +56,47 @@
       <li>SQL</li>
       <li>Visualization (Matplotlib / Seaborn / ggplot2)</li>
     </ul>
+  </section>
+
+  <!-- projects -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    
+    <div class="project">
+      <h3>Megaline Telecom Analysis (Major EDA Project)</h3>
+      <p>A comprehensive Exploratory Data Analysis project focusing on user behavior and revenue generation for a telecom company.</p>
+      <ul>
+        <li><strong>Data Wrangling:</strong> Cleaned and merged multiple raw datasets (calls, messages, internet usage, users, and plans) using pandas, addressing data types, missing values, and applying specific rounding rules for telecom billing.</li>
+        <li><strong>Revenue Calculation:</strong> Engineered complex features to calculate exact monthly revenue per user by factoring in base plan costs and writing logic to dynamically calculate penalty fees for overages on calls, texts, and data.</li>
+        <li><strong>Statistical Analysis & Visualization:</strong> Calculated descriptive statistics (mean, variance, standard deviation) and built visualizations (histograms, bar charts, boxplots) using matplotlib to compare the "Surf" and "Ultimate" plans.</li>
+        <li><strong>Hypothesis Testing:</strong> Formulated and executed independent two-sample Welch's t-tests using scipy.stats to mathematically prove whether revenue differed significantly between the two plans and between the NY-NJ region and the rest of the country.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Video Game Categorization Testing</h3>
+      <p>Developed and executed tests for a customized function designed to evaluate video games.</p>
+      <ul>
+        <li><strong>Concepts Applied:</strong> Implemented logic to test how the function categorizes games based on varying numerical thresholds for critic scores and user scores.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Animal List Sorting Algorithm</h3>
+      <p>Built a custom sorting algorithm for handling string data (a list of animals).</p>
+      <ul>
+        <li><strong>Concepts Applied:</strong> Wrote logic to sort data programmatically, including implementing an optional parameter to handle case conversion for strings during execution.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>GitHub & Open Source Navigation Exercise</h3>
+      <p>Navigated version control and open-source repository management.</p>
+      <ul>
+        <li><strong>Concepts Applied:</strong> Successfully forked and cloned the official NumPy repository via Git using specific credentials, and practiced editing files within a local Python development environment (VS Code and Jupyter).</li>
+      </ul>
+    </div>
+
   </section>
 
   <!-- contact -->
